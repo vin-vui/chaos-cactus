@@ -1,10 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
-Route::get('/', function () {
-    return view('welcome');
-});
+use App\http\Controllers\Controller;
+use App\http\Controllers\HomeController;
 
 Route::middleware([
     'auth:sanctum',
@@ -15,3 +13,12 @@ Route::middleware([
         return view('dashboard');
     })->name('dashboard');
 });
+
+/////////////////////////////////////////////////////
+
+Route::get('/debug', function () {
+    return view('welcome');
+});
+
+
+Route::get('/',[HomeController::class,'index'])->name('home.index');
