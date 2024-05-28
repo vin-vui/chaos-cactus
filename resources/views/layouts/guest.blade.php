@@ -18,8 +18,29 @@
         @livewireStyles
     </head>
     <body>
-        <header class="w-full h-96 bg-slate-900">
-            <nav>
+        <header class="w-full  bg-slate-900 sticky top-0 z-10">
+            <nav class="sticky top-0 ">
+                <div class="">
+                    <ul class="flex justify-center py-2 gap-4 items-center bg-white ">
+                        <li><a href=""><img alt="Chaos Cactus Studio Logo" src="/images/Ressource_perso/logo/Facebook.png"></a></li>
+                        <li><a href=""><img alt="Chaos Cactus Studio Logo" src="/images/Ressource_perso/logo/Git.png"></a> </li>
+                        <li><a href=""><img alt="Chaos Cactus Studio Logo" src="/images/Ressource_perso/logo/Twitter.png"></a> </li>
+                        <li><a href=""><img alt="Chaos Cactus Studio Logo" src="/images/Ressource_perso/logo/Git.png"></a> </li>
+                        <li><a href=""><img alt="Chaos Cactus Studio Logo" src="/images/Ressource_perso/logo/Icon.png"></a> </li>
+                    </ul>
+                </div>
+                <div class="flex justify-between items-center bg-zinc-800 px-12 py-2 sticky top-0 z-30 ">
+                    <div><img alt="Logo Chaos Cactus" src="/images/Ressource_perso/logo-studio/logo_pique.png"> </div>
+                    <div>
+                        <ul class="flex  gap-4 text-slate-300 uppercase">
+                            <li><a class="hover:border-b border-red-400 duration-100" href="">Accueil</a></li>
+                            <li><a class="hover:border-b border-red-400 duration-100" href="">Jeux</a></li>
+                            <li><a class="hover:border-b border-red-400 duration-100" href="">Presse</a></li>
+                            <li><a class="hover:border-b border-red-400 duration-100" href="">Boutique</a></li>
+                            <li><a class="bg-red-400 px-3 py-2 uppercase hover:bg-transparent border border-red-400 duration-100" href="">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
                 
             </nav>
 
@@ -31,14 +52,14 @@
 
         <div>
             <footer class=" w-full h-96 bg-slate-900 flex flex-col items-center">
-                <img alt="Chaos Cactus Studio Logo" src="/images/Ressource/logo-studio/logo-chaos-cactus1.png" class="max-w-64 min-w-64 my-3">
+                <img alt="Chaos Cactus Studio Logo" src="/images/Ressource_perso/logo-studio/logo-chaos-cactus1.png" class="max-w-64 min-w-64 my-3">
                 <p class=" text-white mb-3">Rue de la rue, 25000 Besançon, France</p>
                     <ul class="flex gap-10">
-                        <li><img alt="Chaos Cactus Studio Logo" src="/images/Ressource/logo/Facebook.png"></li>
-                        <li><img alt="Chaos Cactus Studio Logo" src="/images/Ressource/logo/Git.png"></li>
-                        <li><img alt="Chaos Cactus Studio Logo" src="/images/Ressource/logo/Twitter.png"></li>
-                        <li><img alt="Chaos Cactus Studio Logo" src="/images/Ressource/logo/Git.png"></li>
-                        <li><img alt="Chaos Cactus Studio Logo" src="/images/Ressource/logo/Icon.png"></li>
+                        <li><img alt="Chaos Cactus Studio Logo" src="/images/Ressource_perso/logo/Facebook.png"></li>
+                        <li><img alt="Chaos Cactus Studio Logo" src="/images/Ressource_perso/logo/Git.png"></li>
+                        <li><img alt="Chaos Cactus Studio Logo" src="/images/Ressource_perso/logo/Twitter.png"></li>
+                        <li><img alt="Chaos Cactus Studio Logo" src="/images/Ressource_perso/logo/Git.png"></li>
+                        <li><img alt="Chaos Cactus Studio Logo" src="/images/Ressource_perso/logo/Icon.png"></li>
                     </ul>
                 <div>
                     <p class=" text-white mt-4 w-700 flex justify-center border-t pt-1.5">© 2024 Chaos cactus | All Rights Reserved |  Cookie and Privacy Policy</p>
