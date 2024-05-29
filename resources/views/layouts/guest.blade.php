@@ -18,40 +18,58 @@
         @livewireStyles
     </head>
     <body>
-        <header class="w-full  bg-slate-900 sticky top-0 z-10">
-            <nav class="sticky top-0 ">
-                <div class="">
+        <header class="w-full  bg-slate-900 ">
+            
+                <div>
                     <ul class="flex justify-center py-2 gap-4 items-center bg-white ">
                         <li><a href=""><img alt="Chaos Cactus Studio Logo" src="/images/Ressource_perso/logo/Facebook.png"></a></li>
-                        <li><a href=""><img alt="Chaos Cactus Studio Logo" src="/images/Ressource_perso/logo/Git.png"></a> </li>
+                        <li><a href=""><img alt="Chaos Cactus Studio Logo" src="/images/Ressource_perso/logo/Instagram.png"></a> </li>
                         <li><a href=""><img alt="Chaos Cactus Studio Logo" src="/images/Ressource_perso/logo/Twitter.png"></a> </li>
                         <li><a href=""><img alt="Chaos Cactus Studio Logo" src="/images/Ressource_perso/logo/Git.png"></a> </li>
                         <li><a href=""><img alt="Chaos Cactus Studio Logo" src="/images/Ressource_perso/logo/Icon.png"></a> </li>
                     </ul>
                 </div>
-                <div class="flex justify-between items-center bg-zinc-800 px-12 py-2 sticky top-0 z-30 ">
-                    <div><img alt="Logo Chaos Cactus" src="/images/Ressource_perso/logo-studio/logo_pique.png"> </div>
-                    <div>
-                        <ul class="flex  gap-4 text-slate-300 uppercase">
-                            <li><a class="hover:border-b border-red-400 duration-100" href="">Accueil</a></li>
-                            <li><a class="hover:border-b border-red-400 duration-100" href="">Jeux</a></li>
-                            <li><a class="hover:border-b border-red-400 duration-100" href="">Presse</a></li>
-                            <li><a class="hover:border-b border-red-400 duration-100" href="">Boutique</a></li>
-                            <li><a class="bg-red-400 px-3 py-2 uppercase hover:bg-transparent border border-red-400 duration-100" href="">Contact</a></li>
-                        </ul>
-                    </div>
-                </div>
-                
-            </nav>
-
         </header>
+                
+                <nav class="sticky top-0 z-30">
+                    <div class="flex justify-between items-center bg-zinc-800 px-12 py-2  ">
+                        <div>
+                            <img alt="Logo Chaos Cactus" src="/images/Ressource_perso/logo-studio/logo_pique.png"> </div>
+                        <div>
+                            <ul class=" flex gap-4 text-slate-300 uppercase ">
+                                <li><a class="hover:border-b border-red-400 duration-100" href="">Accueil</a></li>
+                                <li><a class="hover:border-b border-red-400 duration-100" href="">Jeux</a></li>
+                                <li><a class="hover:border-b border-red-400 duration-100" href="">Presse</a></li>
+                                <li><a class="hover:border-b border-red-400 duration-100" href="">Boutique <svg class="inline-block pb-1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="25" height="25" viewBox="0,0,256,256">
+                                    <g fill="#cbd5e1" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(5.33333,5.33333)"><path d="M35.48438,5.98438c-0.61065,0.00015 -1.16026,0.37042 -1.38978,0.93629c-0.22952,0.56587 -0.09314,1.21439 0.34486,1.63988l2.43945,2.43945h-1.37891c-11.85661,0 -21.5,9.64339 -21.5,21.5c-0.00765,0.54095 0.27656,1.04412 0.74381,1.31683c0.46725,0.27271 1.04514,0.27271 1.51238,0c0.46725,-0.27271 0.75146,-0.77588 0.74381,-1.31683c0,-10.23539 8.26461,-18.5 18.5,-18.5h1.37891l-2.43945,2.43945c-0.39185,0.37623 -0.54969,0.9349 -0.41265,1.46055c0.13704,0.52565 0.54754,0.93616 1.07319,1.07319c0.52565,0.13704 1.08432,-0.0208 1.46055,-0.41265l4.87109,-4.87109c0.37156,-0.28495 0.58875,-0.72705 0.58721,-1.19529c-0.00153,-0.46824 -0.22161,-0.90891 -0.59503,-1.19142l-4.86328,-4.86328c-0.28248,-0.2909 -0.67069,-0.45506 -1.07617,-0.45508zM12.5,6c-3.57194,0 -6.5,2.92806 -6.5,6.5v23c0,3.57194 2.92806,6.5 6.5,6.5h23c3.57194,0 6.5,-2.92806 6.5,-6.5v-8c0.00765,-0.54095 -0.27656,-1.04412 -0.74381,-1.31683c-0.46725,-0.27271 -1.04514,-0.27271 -1.51238,0c-0.46725,0.27271 -0.75146,0.77588 -0.74381,1.31683v8c0,1.95006 -1.54994,3.5 -3.5,3.5h-23c-1.95006,0 -3.5,-1.54994 -3.5,-3.5v-23c0,-1.95006 1.54994,-3.5 3.5,-3.5h8c0.54095,0.00765 1.04412,-0.27656 1.31683,-0.74381c0.27271,-0.46725 0.27271,-1.04514 0,-1.51238c-0.27271,-0.46725 -0.77588,-0.75146 -1.31683,-0.74381z"></path></g></g>
+                                    </svg></a></li>
+                                <li><a class="bg-red-400 px-3 py-2 uppercase hover:bg-transparent border border-red-400 duration-100" href="">Contact</a></li>
+                            </ul>
+                        </div>
+                        <button class="space-y-1 group  md:hidden" >
+                            <div class="w-6 h-1 bg-slate-300 rounded-sm" ></div>
+                            <div class="w-6 h-1 bg-slate-300 rounded-sm" ></div>
+                            <div class="w-6 h-1 bg-slate-300 rounded-sm" ></div>
+
+                            <ul class=" bg-zinc-700 w-4/5 h-screen pb-10 absolute -top-0 right-0 duration-150 flex flex-col space-y-8 justify-center text-slate-300">
+                                <li><a class="hover:border-b border-red-400 duration-100" href="">Accueil</a></li>
+                                <li><a class="hover:border-b border-red-400 duration-100" href="">Jeux</a></li>
+                                <li><a class="hover:border-b border-red-400 duration-100" href="">Presse</a></li>
+                                <li><a class="hover:border-b border-red-400 duration-100" href="">Boutique</a></li>
+                                <li><a class="bg-red-400 px-3 py-2 uppercase hover:bg-transparent border border-red-400 duration-100" href="">Contact</a></li>
+                            </ul>
+                        </button>
+                    </div>
+                </nav>
+
+        
 
         <div class="font-sans text-gray-900 antialiased">
             {{ $slot }}
         </div>
 
         <div>
-            <footer class=" w-full h-96 bg-slate-900 flex flex-col items-center">
+            <footer class=" w-full h-96 bg-zinc-800 flex flex-col items-center">
                 <img alt="Chaos Cactus Studio Logo" src="/images/Ressource_perso/logo-studio/logo-chaos-cactus1.png" class="max-w-64 min-w-64 my-3">
                 <p class=" text-white mb-3">Rue de la rue, 25000 Besançon, France</p>
                     <ul class="flex gap-10">
@@ -62,7 +80,7 @@
                         <li><img alt="Chaos Cactus Studio Logo" src="/images/Ressource_perso/logo/Icon.png"></li>
                     </ul>
                 <div>
-                    <p class=" text-white mt-4 w-700 flex justify-center border-t pt-1.5">© 2024 Chaos cactus | All Rights Reserved |  Cookie and Privacy Policy</p>
+                    <p class=" text-white mt-4 w-700 flex justify-center border-t pt-1.5 ">© 2024 Chaos cactus | All Rights Reserved |  Cookie and Privacy Policy</p>
                 </div>
             </footer>
         </div>
