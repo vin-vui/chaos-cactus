@@ -22,3 +22,9 @@ Route::get('/debug', function () {
 
 
 Route::get('/',[HomeController::class,'index'])->name('home.index');
+
+Route::get('/Game',[HomeController::class,'game'])->name('game.index');
+
+Route::get('/Presse',[HomeController::class,'presse'])->name('presse.index');
+
+Route::get('/Contact',[HomeController::class,'contact'])->name('contact.index');
