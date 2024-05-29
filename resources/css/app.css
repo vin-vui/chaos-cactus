@@ -5,3 +5,7 @@
 [x-cloak] {
     display: none;
 }
+
+.blend-multiply {
+    mix-blend-mode: multiply;
+}
