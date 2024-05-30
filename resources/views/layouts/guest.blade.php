@@ -10,6 +10,7 @@
         <!-- Fonts -->
         <link rel="preconnect" href="https://fonts.bunny.net">
         <link href="https://fonts.bunny.net/css?family=figtree:400,500,600&display=swap" rel="stylesheet" />
+        <link href="https://fonts.bunny.net/css?famliy=figtree:400,500,600&display=swap" rel="stylesheet" />
 
         <!-- Scripts -->
         @vite(['resources/css/app.css', 'resources/js/app.js'])
@@ -27,6 +28,7 @@
                         <li><a href=""><img alt="Chaos Cactus Studio Logo" src="/images/Ressource_perso/logo/Twitter.png"></a> </li>
                         <li><a href=""><img alt="Chaos Cactus Studio Logo" src="/images/Ressource_perso/logo/Git.png"></a> </li>
                         <li><a href=""><img alt="Chaos Cactus Studio Logo" src="/images/Ressource_perso/logo/Icon.png"></a> </li>
+                        <li><a href=""><img alt="Chaos Cactus Studio Logo" src="/images/Ressource_perso/logo/Dribble.png"></a> </li>
                     </ul>
                 </div>
         </header>

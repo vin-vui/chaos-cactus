@@ -18,7 +18,9 @@ export default {
                 '700': '43.75rem',
             },
             fontFamily: {
+                western: ['Carnivalee-Freakshow', ...defaultTheme.fontFamily.sans],
                 sans: ['Figtree', ...defaultTheme.fontFamily.sans],
+                
             },
         },
     },
