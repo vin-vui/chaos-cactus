@@ -36,7 +36,7 @@
                             <img alt="Logo Chaos Cactus" src="/images/Ressource_perso/logo-studio/logo_pique.png"> </div>
                         <div>
                             <ul class=" flex gap-4 text-slate-300 uppercase ">
-                                <li><a class="hover:border-b border-red-800 duration-100" href="{{route('home.index')}}">Accueli</a></li>
+                                <li><a class="hover:border-b border-red-800 duration-100" href="{{route('home.index')}}">Accueil</a></li>
                                 <li><a class="hover:border-b border-red-800 duration-100" href="{{route('game.index')}}">Jeux</a></li>
                                 <li><a class="hover:border-b border-red-800 duration-100" href="{{route('presse.index')}}">Presse</a></li>
                                 <li><a class="hover:border-b border-red-400 duration-100" href="https://store.steampowered.com/">Boutique</a></li><svg class="inline-block pb-1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="25" height="25" viewBox="0,0,256,256">
@@ -71,74 +71,12 @@
 
 
 <body>
-    <header class="w-full  bg-slate-900">
-
-        <div class="">
-            <ul class="flex justify-center py-2 gap-4 items-center bg-white ">
-                <li><a href=""><img alt="Chaos Cactus Studio Logo" src="/images/Ressource_perso/logo/Facebook.png"></a>
-                </li>
-                <li><a href=""><img alt="Chaos Cactus Studio Logo" src="/images/Ressource_perso/logo/Git.png"></a> </li>
-                <li><a href=""><img alt="Chaos Cactus Studio Logo" src="/images/Ressource_perso/logo/Twitter.png"></a>
-                </li>
-                <li><a href=""><img alt="Chaos Cactus Studio Logo" src="/images/Ressource_perso/logo/Git.png"></a> </li>
-                <li><a href=""><img alt="Chaos Cactus Studio Logo" src="/images/Ressource_perso/logo/Icon.png"></a>
-                </li>
-            </ul>
-        </div>
-    </header>
-    <nav class="sticky top-0 z-50">
-        <div class="flex justify-between items-center bg-zinc-800 px-12 py-2">
-            <div><img alt="Logo Chaos Cactus" src="/images/Ressource_perso/logo-studio/logo_pique.png"> </div>
-            <div>
-                <ul class="flex  gap-4 text-slate-300 uppercase">
-                    <li><a class="hover:border-b border-red-400 duration-100" href="">Accueil</a></li>
-                    <li><a class="hover:border-b border-red-400 duration-100" href="">Jeux</a></li>
-                    <li><a class="hover:border-b border-red-400 duration-100" href="">Presse</a></li>
-                    <li><a class="hover:border-b border-red-400 duration-100" href="">Boutique</a></li>
-                    <li><a class="bg-red-400 px-3 py-2 uppercase hover:bg-transparent border border-red-400 duration-100"
-                            href="">Contact</a></li>
-                </ul>
-            </div>
-        </div>
+    
+    
         <div>
-        <footer class=" w-full h-96 bg-zinc-800 flex flex-col items-center">
+    
 
-            <footer class=" w-full h-96 bg-zinc-800 flex flex-col items-center">
-
-                <div class="flex w-full justify-between">
-                    <div class="flex ml-8 mt-2 h-full w-96">
-                        <ul class="   text-slate-300 ">
-                            <li class="flex mt-7"><svg width="24" height="24" fill="white" xmlns="http://www.w3.org/2000/svg"><path d="M14 12a2 2 0 1 1-4 0 2 2 0 0 1 4 0z" /></svg>Acceuil</li>
-                            <li class="flex mt-7"><svg width="24" height="24" fill="white" xmlns="http://www.w3.org/2000/svg"><path d="M14 12a2 2 0 1 1-4 0 2 2 0 0 1 4 0z" /></svg>Jeux</li>
-                            <li class="flex mt-7"><svg width="24" height="24" fill="white" xmlns="http://www.w3.org/2000/svg"><path d="M14 12a2 2 0 1 1-4 0 2 2 0 0 1 4 0z" /></svg>A propos</li>
-                            <li class="flex mt-7"><svg width="24" height="24" fill="white" xmlns="http://www.w3.org/2000/svg"><path d="M14 12a2 2 0 1 1-4 0 2 2 0 0 1 4 0z" /></svg>Presse</li>
-                            <li class="flex mt-7"><svg width="24" height="24" fill="white" xmlns="http://www.w3.org/2000/svg"><path d="M14 12a2 2 0 1 1-4 0 2 2 0 0 1 4 0z" /></svg>Boutique</li>
-                            <li class="flex mt-7"><svg width="24" height="24" fill="white" xmlns="http://www.w3.org/2000/svg"><path d="M14 12a2 2 0 1 1-4 0 2 2 0 0 1 4 0z" /></svg>Contactez nous</li>
-                        </ul>
-                    </div>
-                    <div class=" flex flex-col items-center gap-4 mt-2 w-96">
-                        <img src="/images/Ressource_perso/logo-studio/Chaos_Cactus_Logo.png" alt="logo_studio" class="w-40">
-                            <ul class=" flex">
-                                <li class=" size-6 mx-4"><img alt="Chaos Cactus Studio Logo" src="/images/Ressource_perso/logo/Facebook.png"></li>
-                                <li class=" size-6 mx-4"><img alt="Chaos Cactus Studio Logo" src="/images/Ressource_perso/logo/Instagram.png"></li>
-                                <li class=" size-6 mx-4"><img alt="Chaos Cactus Studio Logo" src="/images/Ressource_perso/logo/Twitter.png"></li>
-                                <li class=" size-6 mx-4"><img alt="Chaos Cactus Studio Logo" src="/images/Ressource_perso/logo/Git.png"></li>
-                                <li class=" size-6 mx-4"><img alt="Chaos Cactus Studio Logo" src="/images/Ressource_perso/logo/Dribble.png"></li>
-                            </ul>
-                            <p class=" text-slate-300"> © 2024 Chaos Cactus, Inc. All rights reserved. </p>
-                    </div>
-                    <div class=" mt-2 mr-3 w-96">
-                        <p class=" text-slate-300 font-western">SUBSCRIBE TO OUR NEWSLETTER</p>
-                        <div>
-                            <form class="">
-                                <input type="email" placeholder="Enter your email" class="rounded-xl h-8 w-60">
-                                <button type="submit" name="subscribe" class="text-slate-300 bg-red-800 px-2 py-1 rounded-xl ml-2 w-32 border border-red-700 hover:bg-red-950">subscribe</button>
-                            </form>
-                            <p class="text-slate-300 bg-red-800 px-2 py-1 rounded-xl flex justify-center my-3 border border-red-700 hover:bg-red-950">Contact</p>
-                        </div>
-                    </div>
-                </div>
-            </footer>
+            
         </div>
         @livewireScripts
     </body>
@@ -154,22 +92,42 @@
     </div>
 
     <div>
-        <footer class=" w-full h-96 bg-slate-900 flex flex-col items-center">
-            <img alt="Chaos Cactus Studio Logo" src="/images/Ressource_perso/logo-studio/logo-chaos-cactus1.png"
-                class="max-w-64 min-w-64 my-3">
-            <p class=" text-white mb-3">Rue de la rue, 25000 Besançon, France</p>
-            <ul class="flex gap-10">
-                <li><img alt="Chaos Cactus Studio Logo" src="/images/Ressource_perso/logo/Facebook.png"></li>
-                <li><img alt="Chaos Cactus Studio Logo" src="/images/Ressource_perso/logo/Git.png"></li>
-                <li><img alt="Chaos Cactus Studio Logo" src="/images/Ressource_perso/logo/Twitter.png"></li>
-                <li><img alt="Chaos Cactus Studio Logo" src="/images/Ressource_perso/logo/Git.png"></li>
-                <li><img alt="Chaos Cactus Studio Logo" src="/images/Ressource_perso/logo/Icon.png"></li>
+    <footer class=" w-full h-96 bg-zinc-800 flex flex-col items-center">
+
+<div class="flex w-full justify-between">
+    <div class="flex ml-8 mt-2 h-full w-96">
+        <ul class="   text-slate-300 ">
+            <li class="flex mt-7"><svg width="24" height="24" fill="white" xmlns="http://www.w3.org/2000/svg"><path d="M14 12a2 2 0 1 1-4 0 2 2 0 0 1 4 0z" /></svg>Acceuil</li>
+            <li class="flex mt-7"><svg width="24" height="24" fill="white" xmlns="http://www.w3.org/2000/svg"><path d="M14 12a2 2 0 1 1-4 0 2 2 0 0 1 4 0z" /></svg>Jeux</li>
+            <li class="flex mt-7"><svg width="24" height="24" fill="white" xmlns="http://www.w3.org/2000/svg"><path d="M14 12a2 2 0 1 1-4 0 2 2 0 0 1 4 0z" /></svg>A propos</li>
+            <li class="flex mt-7"><svg width="24" height="24" fill="white" xmlns="http://www.w3.org/2000/svg"><path d="M14 12a2 2 0 1 1-4 0 2 2 0 0 1 4 0z" /></svg>Presse</li>
+            <li class="flex mt-7"><svg width="24" height="24" fill="white" xmlns="http://www.w3.org/2000/svg"><path d="M14 12a2 2 0 1 1-4 0 2 2 0 0 1 4 0z" /></svg>Boutique</li>
+            <li class="flex mt-7"><svg width="24" height="24" fill="white" xmlns="http://www.w3.org/2000/svg"><path d="M14 12a2 2 0 1 1-4 0 2 2 0 0 1 4 0z" /></svg>Contactez nous</li>
+        </ul>
+    </div>
+    <div class=" flex flex-col items-center gap-4 mt-2 w-96">
+        <img src="/images/Ressource_perso/logo-studio/Chaos_Cactus_Logo.png" alt="logo_studio" class="w-40">
+            <ul class=" flex">
+                <li class=" size-6 mx-4"><img alt="Chaos Cactus Studio Logo" src="/images/Ressource_perso/logo/Facebook.png"></li>
+                <li class=" size-6 mx-4"><img alt="Chaos Cactus Studio Logo" src="/images/Ressource_perso/logo/Instagram.png"></li>
+                <li class=" size-6 mx-4"><img alt="Chaos Cactus Studio Logo" src="/images/Ressource_perso/logo/Twitter.png"></li>
+                <li class=" size-6 mx-4"><img alt="Chaos Cactus Studio Logo" src="/images/Ressource_perso/logo/Git.png"></li>
+                <li class=" size-6 mx-4"><img alt="Chaos Cactus Studio Logo" src="/images/Ressource_perso/logo/Dribble.png"></li>
             </ul>
-            <div>
-                <p class=" text-white mt-4 w-700 flex justify-center border-t pt-1.5">© 2024 Chaos cactus | All Rights
-                    Reserved |  Cookie and Privacy Policy</p>
-            </div>
-        </footer>
+            <p class=" text-slate-300"> © 2024 Chaos Cactus, Inc. All rights reserved. </p>
+    </div>
+    <div class=" mt-2 mr-3 w-96">
+        <p class=" text-slate-300 font-western">SUBSCRIBE TO OUR NEWSLETTER</p>
+        <div>
+            <form class="">
+                <input type="email" placeholder="Enter your email" class="rounded-xl h-8 w-60">
+                <button type="submit" name="subscribe" class="text-slate-300 bg-red-800 px-2 py-1 rounded-xl ml-2 w-32 border border-red-700 hover:bg-red-950">subscribe</button>
+            </form>
+            <p class="text-slate-300 bg-red-800 px-2 py-1 rounded-xl flex justify-center my-3 border border-red-700 hover:bg-red-950">Contact</p>
+        </div>
+    </div>
+</div>
+</footer>
     </div>
     @livewireScripts
 </body>
