@@ -1,18 +1,17 @@
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="csrf-token" content="{{ csrf_token() }}">
 
-        <title>{{ config('app.name', 'Laravel') }}</title>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="csrf-token" content="{{ csrf_token() }}">
 
-        <!-- Fonts -->
-        <link rel="preconnect" href="https://fonts.bunny.net">
-        <link href="https://fonts.bunny.net/css?famliy=figtree:400,500,600&display=swap" rel="stylesheet" />
+    
+    <title>{{ config('app.name', 'Laravel') }}</title>
 
-        <!-- Scripts -->
-        @vite(['resources/css/app.css', 'resources/js/app.js'])
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.bunny.net">
+    <link href="https://fonts.bunny.net/css?family=figtree:400,500,600&display=swap" rel="stylesheet" />
 
         <!-- Styles -->
         @livewireStyles
@@ -29,24 +28,6 @@
                         <li><a href=""><img alt="Chaos Cactus Studio Logo" src="/images/Ressource_perso/logo/Dribble.png"></a> </li>
                     </ul>
                 </div>
-<<<<<<< Updated upstream
-=======
-                <div class="flex justify-between items-center bg-zinc-800 px-12 py-2 sticky top-0 z-30 ">
-                    <div class="w-9"><img alt="Logo Chaos Cactus" src="/images/Ressource_perso/logo-studio/Chaos_Cactus_Logo.png"></div>
-                    <div>
-                        <ul class="flex  gap-4 text-slate-300 uppercase">
-                            <li><a class="hover:border-b border-red-800 duration-100" href="{{route('home.index')}}">Accueli</a></li>
-                            <li><a class="hover:border-b border-red-800 duration-100" href="{{route('game.index')}}">Jeux</a></li>
-                            <li><a class="hover:border-b border-red-800 duration-100" href="{{route('presse.index')}}">Presse</a></li>
-                            <li><a class="hover:border-b border-red-800 duration-100" href="https://store.steampowered.com/">Boutique</a></li>
-                            <li><a class="bg-red-800 px-3 py-2 uppercase rounded-xl hover:bg-red-950 border border-red-700 duration-100" href="{{route('contact.index')}}">Contact</a></li>
-                        </ul>
-                    </div>
-                </div>
-                
-            </nav>
-
->>>>>>> Stashed changes
         </header>
                 
                 <nav class="sticky top-0 z-30">
@@ -81,16 +62,49 @@
 
         
 
-        <div class="font-sans text-gray-900 antialiased">
-            {{ $slot }}
-        </div>
+    <!-- Scripts -->
+    @vite(['resources/css/app.css', 'resources/js/app.js'])
 
+    <!-- Styles -->
+    @livewireStyles
+</head>
+
+
+<body>
+    <header class="w-full  bg-slate-900">
+
+        <div class="">
+            <ul class="flex justify-center py-2 gap-4 items-center bg-white ">
+                <li><a href=""><img alt="Chaos Cactus Studio Logo" src="/images/Ressource_perso/logo/Facebook.png"></a>
+                </li>
+                <li><a href=""><img alt="Chaos Cactus Studio Logo" src="/images/Ressource_perso/logo/Git.png"></a> </li>
+                <li><a href=""><img alt="Chaos Cactus Studio Logo" src="/images/Ressource_perso/logo/Twitter.png"></a>
+                </li>
+                <li><a href=""><img alt="Chaos Cactus Studio Logo" src="/images/Ressource_perso/logo/Git.png"></a> </li>
+                <li><a href=""><img alt="Chaos Cactus Studio Logo" src="/images/Ressource_perso/logo/Icon.png"></a>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <nav class="sticky top-0 z-50">
+        <div class="flex justify-between items-center bg-zinc-800 px-12 py-2">
+            <div><img alt="Logo Chaos Cactus" src="/images/Ressource_perso/logo-studio/logo_pique.png"> </div>
+            <div>
+                <ul class="flex  gap-4 text-slate-300 uppercase">
+                    <li><a class="hover:border-b border-red-400 duration-100" href="">Accueil</a></li>
+                    <li><a class="hover:border-b border-red-400 duration-100" href="">Jeux</a></li>
+                    <li><a class="hover:border-b border-red-400 duration-100" href="">Presse</a></li>
+                    <li><a class="hover:border-b border-red-400 duration-100" href="">Boutique</a></li>
+                    <li><a class="bg-red-400 px-3 py-2 uppercase hover:bg-transparent border border-red-400 duration-100"
+                            href="">Contact</a></li>
+                </ul>
+            </div>
+        </div>
         <div>
-<<<<<<< Updated upstream
         <footer class=" w-full h-96 bg-zinc-800 flex flex-col items-center">
-=======
+
             <footer class=" w-full h-96 bg-zinc-800 flex flex-col items-center">
->>>>>>> Stashed changes
+
                 <div class="flex w-full justify-between">
                     <div class="flex ml-8 mt-2 h-full w-96">
                         <ul class="   text-slate-300 ">
@@ -130,3 +144,34 @@
     </body>
 </html>
 
+    </nav>
+
+
+
+
+    <div class="font-sans text-gray-900 antialiased flex-grow">
+        {{ $slot }}
+    </div>
+
+    <div>
+        <footer class=" w-full h-96 bg-slate-900 flex flex-col items-center">
+            <img alt="Chaos Cactus Studio Logo" src="/images/Ressource_perso/logo-studio/logo-chaos-cactus1.png"
+                class="max-w-64 min-w-64 my-3">
+            <p class=" text-white mb-3">Rue de la rue, 25000 Besançon, France</p>
+            <ul class="flex gap-10">
+                <li><img alt="Chaos Cactus Studio Logo" src="/images/Ressource_perso/logo/Facebook.png"></li>
+                <li><img alt="Chaos Cactus Studio Logo" src="/images/Ressource_perso/logo/Git.png"></li>
+                <li><img alt="Chaos Cactus Studio Logo" src="/images/Ressource_perso/logo/Twitter.png"></li>
+                <li><img alt="Chaos Cactus Studio Logo" src="/images/Ressource_perso/logo/Git.png"></li>
+                <li><img alt="Chaos Cactus Studio Logo" src="/images/Ressource_perso/logo/Icon.png"></li>
+            </ul>
+            <div>
+                <p class=" text-white mt-4 w-700 flex justify-center border-t pt-1.5">© 2024 Chaos cactus | All Rights
+                    Reserved |  Cookie and Privacy Policy</p>
+            </div>
+        </footer>
+    </div>
+    @livewireScripts
+</body>
+
+</html>
