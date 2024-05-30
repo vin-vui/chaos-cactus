@@ -9,7 +9,6 @@
 
         <!-- Fonts -->
         <link rel="preconnect" href="https://fonts.bunny.net">
-        <link href="https://fonts.bunny.net/css?family=figtree:400,500,600&display=swap" rel="stylesheet" />
         <link href="https://fonts.bunny.net/css?famliy=figtree:400,500,600&display=swap" rel="stylesheet" />
 
         <!-- Scripts -->
@@ -27,10 +26,27 @@
                         <li><a href=""><img alt="Chaos Cactus Studio Logo" src="/images/Ressource_perso/logo/Instagram.png"></a> </li>
                         <li><a href=""><img alt="Chaos Cactus Studio Logo" src="/images/Ressource_perso/logo/Twitter.png"></a> </li>
                         <li><a href=""><img alt="Chaos Cactus Studio Logo" src="/images/Ressource_perso/logo/Git.png"></a> </li>
-                        <li><a href=""><img alt="Chaos Cactus Studio Logo" src="/images/Ressource_perso/logo/Icon.png"></a> </li>
                         <li><a href=""><img alt="Chaos Cactus Studio Logo" src="/images/Ressource_perso/logo/Dribble.png"></a> </li>
                     </ul>
                 </div>
+<<<<<<< Updated upstream
+=======
+                <div class="flex justify-between items-center bg-zinc-800 px-12 py-2 sticky top-0 z-30 ">
+                    <div class="w-9"><img alt="Logo Chaos Cactus" src="/images/Ressource_perso/logo-studio/Chaos_Cactus_Logo.png"></div>
+                    <div>
+                        <ul class="flex  gap-4 text-slate-300 uppercase">
+                            <li><a class="hover:border-b border-red-800 duration-100" href="{{route('home.index')}}">Accueli</a></li>
+                            <li><a class="hover:border-b border-red-800 duration-100" href="{{route('game.index')}}">Jeux</a></li>
+                            <li><a class="hover:border-b border-red-800 duration-100" href="{{route('presse.index')}}">Presse</a></li>
+                            <li><a class="hover:border-b border-red-800 duration-100" href="https://store.steampowered.com/">Boutique</a></li>
+                            <li><a class="bg-red-800 px-3 py-2 uppercase rounded-xl hover:bg-red-950 border border-red-700 duration-100" href="{{route('contact.index')}}">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+                
+            </nav>
+
+>>>>>>> Stashed changes
         </header>
                 
                 <nav class="sticky top-0 z-30">
@@ -70,7 +86,11 @@
         </div>
 
         <div>
+<<<<<<< Updated upstream
         <footer class=" w-full h-96 bg-zinc-800 flex flex-col items-center">
+=======
+            <footer class=" w-full h-96 bg-zinc-800 flex flex-col items-center">
+>>>>>>> Stashed changes
                 <div class="flex w-full justify-between">
                     <div class="flex ml-8 mt-2 h-full w-96">
                         <ul class="   text-slate-300 ">
