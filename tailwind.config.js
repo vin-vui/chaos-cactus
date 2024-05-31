@@ -20,37 +20,23 @@ export default {
             height: {
                 '100': '70rem',
             },
-            fontFamily: {
-                western: ['Carnivalee-Freakshow', ...defaultTheme.fontFamily.sans],
-                sans: ['Figtree', ...defaultTheme.fontFamily.sans],
-                
-            },
             backgroundImage: theme => ({
                 'hero': "url('C:/Users/ACS/Documents/GitHub/chaos-cactus/public/images/Ressource_perso/background-black-wall.png')",
+                'press': "url('C:/Users/ACS/Documents/GitHub/chaos-cactus/public/images/Ressource_perso/background-black-wall.jpg')",
+                'woodred': "url('C:/Users/ACS/Documents/GitHub/chaos-cactus/public/images/Ressource_perso/woodred.png')",
                 'game': "url('C:/Users/ACS/Documents/GitHub/chaos-cactus/public/images/Ressource_perso/Background-golfslinger.png')",
                 'game-text': "url('C:/Users/ACS/Documents/GitHub/chaos-cactus/public/images/Ressource_perso/white-texture-background.png')",
                 'cactus-banner': "url('C:/Users/ACS/Documents/GitHub/chaos-cactus/public/images/Ressource_perso/Chaos Cactus Bannière.png')",
-                'wood': "url('C:/Users/ACS/Documents/GitHub/chaos-cactus/public/images/Ressource_perso/wood.png')",
-                'black-wall': "url('C:/Users/ACS/Documents/GitHub/chaos-cactus/public/images/Ressource_perso/Frame.png')",
+                'game-radial': 'radial-gradient(farthest-corner at 40px 40px, #3D4450 0%, #23262E 80%)',
             }),
             backgroundPosition: {
                 'top-right': 'top right',
             },
             rotate: {
-                '15': '-15deg',
+                '15': '-10deg',
                 '60': '60deg',
-            },
-            animation: {
-                'fade-in-left': 'fadeInLeft 1s ease-in-out forwards',
-            },
-            keyframes: {
-                fadeInLeft: {
-                    '0%': { opacity: 0, transform: 'translateX(-200%)' },
-                    '100%': { opacity: 1, transform: 'translateX(0)' },
-                },
             },
         },
     },
-
     plugins: [forms, typography],
 };
