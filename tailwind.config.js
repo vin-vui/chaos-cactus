@@ -20,11 +20,6 @@ export default {
             height: {
                 '100': '70rem',
             },
-            fontFamily: {
-                western: ['Carnivalee-Freakshow', ...defaultTheme.fontFamily.sans],
-                sans: ['Figtree', ...defaultTheme.fontFamily.sans],
-                
-            },
             backgroundImage: theme => ({
                 'hero': "url('C:/Users/ACS/Documents/GitHub/chaos-cactus/public/images/Ressource_perso/background-black-wall.png')",
                 'press': "url('C:/Users/ACS/Documents/GitHub/chaos-cactus/public/images/Ressource_perso/background-black-wall.jpg')",
@@ -38,20 +33,10 @@ export default {
                 'top-right': 'top right',
             },
             rotate: {
-                '15': '-15deg',
+                '15': '-10deg',
                 '60': '60deg',
-            },
-            animation: {
-                'fade-in-left': 'fadeInLeft 1s ease-in-out forwards',
-            },
-            keyframes: {
-                fadeInLeft: {
-                    '0%': { opacity: 0, transform: 'translateX(-200%)' },
-                    '100%': { opacity: 1, transform: 'translateX(0)' },
-                },
             },
         },
     },
-
     plugins: [forms, typography],
 };
