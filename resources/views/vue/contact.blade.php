@@ -25,7 +25,7 @@
             </div>
         </div>
 
-        <div class="w-full h-[70vh] bg-wood bg-no-repeat bg-cover bg-right  flex justify-center items-center">
+        <div class="w-full h-[70vh] bg-woodred bg-no-repeat bg-cover bg-right  flex justify-center items-center">
 
         </div>
 

@@ -5,7 +5,7 @@
 <div class="w-full h-screen bg-game-radial bg-no-repeat bg-cover bg-right  flex justify-center items-center">
 
 </div>
-<div class="w-full h-screen bg-wood bg-no-repeat bg-cover bg-right  flex justify-center items-center">
+<div class="w-full h-screen bg-woodred bg-no-repeat bg-cover bg-right  flex justify-center items-center">
 
 </div>
 

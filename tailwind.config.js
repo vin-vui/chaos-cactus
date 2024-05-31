@@ -28,7 +28,7 @@ export default {
             backgroundImage: theme => ({
                 'hero': "url('C:/Users/ACS/Documents/GitHub/chaos-cactus/public/images/Ressource_perso/background-black-wall.png')",
                 'press': "url('C:/Users/ACS/Documents/GitHub/chaos-cactus/public/images/Ressource_perso/background-black-wall.jpg')",
-                'wood': "url('C:/Users/ACS/Documents/GitHub/chaos-cactus/public/images/Ressource_perso/woodred.png')",
+                'woodred': "url('C:/Users/ACS/Documents/GitHub/chaos-cactus/public/images/Ressource_perso/woodred.png')",
                 'game': "url('C:/Users/ACS/Documents/GitHub/chaos-cactus/public/images/Ressource_perso/Background-golfslinger.png')",
                 'game-text': "url('C:/Users/ACS/Documents/GitHub/chaos-cactus/public/images/Ressource_perso/white-texture-background.png')",
                 'cactus-banner': "url('C:/Users/ACS/Documents/GitHub/chaos-cactus/public/images/Ressource_perso/Chaos Cactus Bannière.png')",
