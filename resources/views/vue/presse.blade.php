@@ -1,7 +1,16 @@
 <x-guest-layout>
 
-<main class="w-full h-screen bg-red-800 border-y flex justify-center items-center">
-<p class="text-white ">presse</p> 
+<main>
+
+<div class="w-full h-screen bg-game-radial bg-no-repeat bg-cover bg-right  flex justify-center items-center">
+
+</div>
+<div class="w-full h-screen bg-wood bg-no-repeat bg-cover bg-right  flex justify-center items-center">
+
+</div>
+
+
+
 </main>
 
 </x-guest-layout>
