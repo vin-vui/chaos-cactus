@@ -30,6 +30,8 @@ export default {
                 'game': "url('C:/Users/ACS/Documents/GitHub/chaos-cactus/public/images/Ressource_perso/Background-golfslinger.png')",
                 'game-text': "url('C:/Users/ACS/Documents/GitHub/chaos-cactus/public/images/Ressource_perso/white-texture-background.png')",
                 'cactus-banner': "url('C:/Users/ACS/Documents/GitHub/chaos-cactus/public/images/Ressource_perso/Chaos Cactus Bannière.png')",
+                'wood': "url('C:/Users/ACS/Documents/GitHub/chaos-cactus/public/images/Ressource_perso/wood.png')",
+                'black-wall': "url('C:/Users/ACS/Documents/GitHub/chaos-cactus/public/images/Ressource_perso/Frame.png')",
             }),
             backgroundPosition: {
                 'top-right': 'top right',
