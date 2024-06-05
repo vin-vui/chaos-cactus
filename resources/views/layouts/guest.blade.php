@@ -143,11 +143,12 @@
 
             <div class="flex w-full justify-between">
                 <div class="flex ml-10 mt-3 h-[full] pb-10 w-96">
+                <div class="flex ml-10 mt-3 h-[full] pb-10 w-96">
                     <ul class="   text-slate-200 ">
                         <li class="flex mt-7"><svg width="24" height="24" fill="white"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path d="M14 12a2 2 0 1 1-4 0 2 2 0 0 1 4 0z" />
-                            </svg>Acceuil</li>
+                            </svg><a href="{{route('home.index')}}">Accueil</a></li>
                         <li class="flex mt-7"><svg width="24" height="24" fill="white"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path d="M14 12a2 2 0 1 1-4 0 2 2 0 0 1 4 0z" />
@@ -155,15 +156,11 @@
                         <li class="flex mt-7"><svg width="24" height="24" fill="white"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path d="M14 12a2 2 0 1 1-4 0 2 2 0 0 1 4 0z" />
-                            </svg>Presse</li>
+                            </svg><a href="https://store.steampowered.com/">Boutique</a></li>
                         <li class="flex mt-7"><svg width="24" height="24" fill="white"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path d="M14 12a2 2 0 1 1-4 0 2 2 0 0 1 4 0z" />
-                            </svg>Boutique</li>
-                        <li class="flex mt-7"><svg width="24" height="24" fill="white"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path d="M14 12a2 2 0 1 1-4 0 2 2 0 0 1 4 0z" />
-                            </svg>Contactez nous</li>
+                            </svg><a href="{{route('contact.index')}}">Contactez nous</a></li>
                     </ul>
                 </div>
                 <div class=" relative flex flex-col justify-evenly items-center mt-2 w-96">
@@ -183,7 +180,24 @@
                                 alt="Chaos Cactus Studio Logo" src="/images/Ressource_perso/logo/Git-white.png"></a>
                         <a target="_blank" href="https://dribbble.com/" class=" size-6 mx-4"><img
                                 alt="Chaos Cactus Studio Logo" src="/images/Ressource_perso/logo/Icon-white.png"></a>
+                        class="absolute mb-[20rem] w-[17rem] z-20">
+                    <img src="/images/Ressource_perso/logo-studio/typo_chaos.png" alt="Logo" class="w-40 mb-[-1rem]">
+                    <ul class=" flex absolute bottom-[5rem]">
+                        <a target="_blank" href="https://www.facebook.com/profile.php?id=61558752730532"
+                            class=" size-6 mx-4"><img alt="Chaos Cactus Studio Logo"
+                                src="/images/Ressource_perso/logo/Facebook-white.png"></a>
+                        <a target="_blank" href="https://www.instagram.com/_chaos_cactus_/" class=" size-6 mx-4"><img
+                                alt="Chaos Cactus Studio Logo"
+                                src="/images/Ressource_perso/logo/Instagram-white.png"></a>
+                        <a target="_blank" href="https://x.com/?lang=en" class=" size-6 mx-4"><img
+                                alt="Chaos Cactus Studio Logo" src="/images/Ressource_perso/logo/Twitter-white.png"></a>
+                        <a target="_blank" href="https://www.git-scm.com/" class=" size-6 mx-4"><img
+                                alt="Chaos Cactus Studio Logo" src="/images/Ressource_perso/logo/Git-white.png"></a>
+                        <a target="_blank" href="https://dribbble.com/" class=" size-6 mx-4"><img
+                                alt="Chaos Cactus Studio Logo" src="/images/Ressource_perso/logo/Icon-white.png"></a>
                     </ul>
+                    <p class=" absolute bottom-[3rem] text-slate-200 "> © 2024 Chaos Cactus, Inc. All rights reserved.
+                    </p>
                     <p class=" absolute bottom-[3rem] text-slate-200 "> © 2024 Chaos Cactus, Inc. All rights reserved.
                     </p>
                 </div>
@@ -194,8 +208,10 @@
                             <input type="email" placeholder="Enter your email" class="rounded-xl h-8 w-60">
                             <button type="submit" name="subscribe"
                                 class="text-slate-200 bg-red-500 px-2 py-1 rounded-xl ml-2 w-32 border border-red-700 hover:bg-red-950">subscribe</button>
+                                class="text-slate-200 bg-red-500 px-2 py-1 rounded-xl ml-2 w-32 border border-red-700 hover:bg-red-950">subscribe</button>
                         </form>
                         <p
+                            class="text-slate-200 bg-red-500 px-2 py-1 rounded-xl flex justify-center my-3 border border-red-700 hover:bg-red-950">
                             class="text-slate-200 bg-red-500 px-2 py-1 rounded-xl flex justify-center my-3 border border-red-700 hover:bg-red-950">
                             Contact</p>
                     </div>
@@ -204,6 +220,7 @@
         </footer>
     </div>
     @livewireScripts
+    @vite(['resources/css/app.css', 'resources/js/app.js', 'resources/css/style-carrousel.css'])
     @vite(['resources/css/app.css', 'resources/js/app.js', 'resources/css/style-carrousel.css'])
 </body>
 

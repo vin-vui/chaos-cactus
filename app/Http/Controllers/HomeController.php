@@ -30,4 +30,24 @@ class HomeController extends Controller
     {
         return view('vue.contact', ['title' => 'contact']);
     }
+
+    public function admin()
+    {
+        return view('vue.adminlogin', ['title' => 'adminlogin']);
+    }
+
+    public function adminmainedit()
+    {
+        return view('vue.adminmainedit', ['title' => 'adminmainedit']);
+    }
+
+    public function adminmanager()
+    {
+        return view('vue.adminmanager', ['title' => 'adminmanager']);
+    }
+
+    public function admingamelist()
+    {
+        return view('vue.admingamelist', ['title' => 'admingamelist']);
+    }
 }
