@@ -63,7 +63,7 @@
                 </div>
             </div>
 
-            <div class="w-full h-[60vh] flex flex-col bg-wood bg-no-repeat bg-cover bg-bottom bg-origin-center z-10">
+            <div class="w-full h-[60vh] flex flex-col bg-woodred bg-no-repeat bg-cover bg-bottom bg-origin-center z-10">
                 <div class="text-5xl text-slate-200 font-bold mt-4 mb-8 text-center">Nos partenaires</div>
                 <div class="w-full h-auto flex mx-auto justify-evenly">
                     <div class="flex items-center">
