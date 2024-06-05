@@ -15,44 +15,80 @@
 
     <!-- Styles -->
     @livewireStyles
+    @vite(['resources/css/app.css', 'resources/js/app.js', 'resources/css/style-carrousel.css'])
 </head>
 
 <body>
     <header class="w-full bg-slate-900">
-
         <div>
             <ul class="flex justify-center py-2 gap-4 items-center bg-white ">
-                <li><a href=""><img alt="Chaos Cactus Studio Logo" src="/images/Ressource_perso/logo/Facebook.png"></a>
+                <li><a target="_blank" href="https://www.facebook.com/profile.php?id=61558752730532"><img
+                            alt="Logo FB" src="/images/Ressource_perso/logo/Facebook.png"></a>
                 </li>
-                <li><a href=""><img alt="Chaos Cactus Studio Logo" src="/images/Ressource_perso/logo/Instagram.png"></a>
+                <li><a target="_blank" href="https://www.instagram.com/_chaos_cactus_/"><img
+                            alt="Logo Insta" src="/images/Ressource_perso/logo/Instagram.png"></a>
                 </li>
-                <li><a href=""><img alt="Chaos Cactus Studio Logo" src="/images/Ressource_perso/logo/Twitter.png"></a>
+                <li><a target="_blank" href="https://x.com/?lang=en"><img alt="Logo X"
+                            src="/images/Ressource_perso/logo/Twitter.png"></a>
                 </li>
-                <li><a href=""><img alt="Chaos Cactus Studio Logo" src="/images/Ressource_perso/logo/Git.png"></a> </li>
-                <li><a href=""><img alt="Chaos Cactus Studio Logo" src="/images/Ressource_perso/logo/Dribble.png"></a>
+                <li><a target="_blank" href="https://www.git-scm.com/"><img alt="Logo Git"
+                            src="/images/Ressource_perso/logo/Git.png"></a>
+                </li>
+                <li><a target="_blank" href="https://dribbble.com/"><img alt="Logo dribbble"
+                            src="/images/Ressource_perso/logo/Dribble.png"></a>
                 </li>
             </ul>
         </div>
     </header>
 
     <nav class="sticky top-0 z-30">
-        <div class="flex justify-between items-center bg-zinc-800 px-12 py-2  ">
+        <div class="relative flex justify-between items-center px-12 py-2" id="navbar">
             <div>
                 <img alt="Logo Chaos Cactus" src="/images/Ressource_perso/logo-studio/logo-chaos-cactus-pm.png">
             </div>
 
             <div>
-                <ul class=" flex gap-4 text-slate-200 uppercase mt-4 ">
-                    <li><a class="hover:border-b border-red-800 duration-100" href="{{route('home.index')}}">Accueil</a>
+                <ul class=" flex gap-6 text-slate-200 uppercase items-center">
+                    <li>
+                        <a id="page-home"
+                            class="relative text-white text-1xl font-light border-none bg-transparent focus:outline-none"
+                            href="{{route('home.index')}}">
+                            <span
+                                class="absolute left-0 bottom-[-2px] w-full h-[1px] bg-red-500 transition-all duration-500 transform scale-x-0 group-hover:scale-x-100"></span>
+                            <span
+                                class="absolute right-0 top-0 w-full h-[1px] bg-red-500 transition-all duration-500 transform scale-x-0 group-hover:scale-x-100"></span>
+                            Accueil</a>
                     </li>
-                    <li><a class="hover:border-b border-red-800 duration-100" href="{{route('game.index')}}">Jeux</a>
+                    <li>
+                        <a id="page-game"
+                            class="relative text-white text-1xl font-light border-none bg-transparent focus:outline-none"
+                            href="{{route('game.index')}}">
+                            <span
+                                class="absolute left-0 bottom-[-2px] w-full h-[1px] bg-red-500 transition-all duration-500 transform scale-x-0 group-hover:scale-x-100"></span>
+                            <span
+                                class="absolute right-0 top-0 w-full h-[1px] bg-red-500 transition-all duration-500 transform scale-x-0 group-hover:scale-x-100"></span>
+                            Jeux</a>
                     </li>
-                    <li><a class="hover:border-b border-red-800 duration-100"
-                            href="{{route('presse.index')}}">Presse</a></li>
-                    <li><a target="_blank" class="hover:border-b border-red-800 duration-100"
-                            href="https://store.steampowered.com/">Boutique <svg class="inline-block pb-1"
-                                xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="25" height="25"
-                                viewBox="0,0,256,256">
+                    <li>
+                        <a id="page-press"
+                            class="relative text-white text-1xl font-light border-none bg-transparent focus:outline-none"
+                            href="{{route('presse.index')}}">
+                            <span
+                                class="absolute left-0 bottom-[-2px] w-full h-[1px] bg-red-500 transition-all duration-500 transform scale-x-0 group-hover:scale-x-100"></span>
+                            <span
+                                class="absolute right-0 top-0 w-full h-[1px] bg-red-500 transition-all duration-500 transform scale-x-0 group-hover:scale-x-100"></span>
+                            Presse</a>
+                    </li>
+                    <li>
+                        <a target="_blank" id="page-shop"
+                            class="relative text-white text-1xl font-light border-none bg-transparent focus:outline-none"
+                            href="https://store.steampowered.com/">
+                            <span
+                                class="absolute left-0 bottom-[-2px] w-full h-[1px] bg-red-500 transition-all duration-500 transform scale-x-0 group-hover:scale-x-100"></span>
+                            <span
+                                class="absolute right-0 top-0 w-full h-[1px] bg-red-500 transition-all duration-500 transform scale-x-0 group-hover:scale-x-100"></span>
+                            Boutique <svg class="inline-block pb-1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                                width="20" height="20" viewBox="0,0,256,256">
                                 <g fill="#cbd5e1" fill-rule="nonzero" stroke="none" stroke-width="1"
                                     stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10"
                                     stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none"
@@ -63,33 +99,16 @@
                                         </path>
                                     </g>
                                 </g>
-                            </svg></a></li>
-                    <li><a class="relative inline-block mx-2  my-[-1rem] px-4 py-2 text-center text-lg font-normal tracking-wide text-stone-100 bg-transparent border-2 border-red-800 rounded-lg shadow-md transition duration-500 ease-in-out transform hover:text-white hover:bg-red-800 hover:shadow-lg active:scale-90"
-                            href="{{route('contact.index')}}">Contact</a></li>
-                </ul>
+                            </svg></a>
+                    </li>
+                    <li class="li">
+                        <button class="button">
+                            <a a href="{{route('contact.index')}}" class="p">Contact</a>
+                        </button>
+                    </li>
             </div>
-            <button class="space-y-1 group  md:hidden">
-                <div class="w-6 h-1 bg-slate-300 rounded-sm"></div>
-                <div class="w-6 h-1 bg-slate-300 rounded-sm"></div>
-                <div class="w-6 h-1 bg-slate-300 rounded-sm"></div>
-
-                <ul
-                    class=" bg-zinc-700 w-4/5 h-screen pb-10 absolute -top-0 right-0 duration-150 flex flex-col space-y-8 justify-center text-slate-200">
-                    <li><a class="hover:border-b border-red-400 duration-100" href="">Accueil</a></li>
-                    <li><a class="hover:border-b border-red-400 duration-100" href="">Jeux</a></li>
-                    <li><a class="hover:border-b border-red-400 duration-100" href="">Presse</a></li>
-                    <li><a class="hover:border-b border-red-400 duration-100" href="">Boutique</a></li>
-                    <li><a class="bg-red-400 px-3 py-2 uppercase hover:bg-transparent border border-red-400 duration-100"
-                            href="">Contact</a></li>
-                </ul>
-            </button>
         </div>
     </nav>
-
-
-
-    <!-- Scripts -->
-    @vite(['resources/css/app.css', 'resources/js/app.js'])
 
     <!-- Styles -->
     @livewireStyles
@@ -103,7 +122,7 @@
         <footer class=" w-full h-auto bg-zinc-800 flex flex-col items-center">
 
             <div class="flex w-full justify-between">
-                <div class="flex ml-10 mt-6 h-full w-96">
+                <div class="flex ml-10 mt-3 h-[full] pb-10 w-96">
                     <ul class="   text-slate-200 ">
                         <li class="flex mt-7"><svg width="24" height="24" fill="white"
                                 xmlns="http://www.w3.org/2000/svg">
@@ -117,6 +136,7 @@
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path d="M14 12a2 2 0 1 1-4 0 2 2 0 0 1 4 0z" />
                             </svg><a href="{{route('presse.index')}}">Presse</a></li>
+                            </svg>Jeux</li>
                         <li class="flex mt-7"><svg width="24" height="24" fill="white"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path d="M14 12a2 2 0 1 1-4 0 2 2 0 0 1 4 0z" />
@@ -129,21 +149,24 @@
                 </div>
                 <div class=" relative flex flex-col justify-evenly items-center mt-2 w-96">
                     <img src="/images/Ressource_perso/logo-studio/logo-chaos-cactus-simple.png" alt="logo_studio"
-                        class="w-[15rem]">
-                    <img src="/images/Ressource_perso/logo-studio/typo_chaos.png" alt="Logo" class="w-40 mb-6">
-                    <ul class=" flex">
-                        <li class=" size-6 mx-4"><img alt="Chaos Cactus Studio Logo"
-                                src="/images/Ressource_perso/logo/Facebook-white.png"></li>
-                        <li class=" size-6 mx-4"><img alt="Chaos Cactus Studio Logo"
-                                src="/images/Ressource_perso/logo/Instagram-white.png"></li>
-                        <li class=" size-6 mx-4"><img alt="Chaos Cactus Studio Logo"
-                                src="/images/Ressource_perso/logo/Twitter-white.png"></li>
-                        <li class=" size-6 mx-4"><img alt="Chaos Cactus Studio Logo"
-                                src="/images/Ressource_perso/logo/Git-white.png"></li>
-                        <li class=" size-6 mx-4"><img alt="Chaos Cactus Studio Logo"
-                                src="/images/Ressource_perso/logo/Icon-white.png"></li>
+                        class="absolute mb-[20rem] w-[17rem] z-20">
+                    <img src="/images/Ressource_perso/logo-studio/typo_chaos.png" alt="Logo" class="w-40 mb-[-1rem]">
+                    <ul class=" flex absolute bottom-[5rem]">
+                        <a target="_blank" href="https://www.facebook.com/profile.php?id=61558752730532"
+                            class=" size-6 mx-4"><img alt="Chaos Cactus Studio Logo"
+                                src="/images/Ressource_perso/logo/Facebook-white.png"></a>
+                        <a target="_blank" href="https://www.instagram.com/_chaos_cactus_/" class=" size-6 mx-4"><img
+                                alt="Chaos Cactus Studio Logo"
+                                src="/images/Ressource_perso/logo/Instagram-white.png"></a>
+                        <a target="_blank" href="https://x.com/?lang=en" class=" size-6 mx-4"><img
+                                alt="Chaos Cactus Studio Logo" src="/images/Ressource_perso/logo/Twitter-white.png"></a>
+                        <a target="_blank" href="https://www.git-scm.com/" class=" size-6 mx-4"><img
+                                alt="Chaos Cactus Studio Logo" src="/images/Ressource_perso/logo/Git-white.png"></a>
+                        <a target="_blank" href="https://dribbble.com/" class=" size-6 mx-4"><img
+                                alt="Chaos Cactus Studio Logo" src="/images/Ressource_perso/logo/Icon-white.png"></a>
                     </ul>
-                    <p class=" text-slate-200 pb-5 mt-2 "> © 2024 Chaos Cactus, Inc. All rights reserved. </p>
+                    <p class=" absolute bottom-[3rem] text-slate-200 "> © 2024 Chaos Cactus, Inc. All rights reserved.
+                    </p>
                 </div>
                 <div class=" mt-10 w-96 mr-10">
                     <p class=" text-slate-200 font-western">SUBSCRIBE TO OUR NEWSLETTER</p>
@@ -151,10 +174,10 @@
                         <form class="">
                             <input type="email" placeholder="Enter your email" class="rounded-xl h-8 w-60">
                             <button type="submit" name="subscribe"
-                                class="text-slate-200 bg-red-800 px-2 py-1 rounded-xl ml-2 w-32 border border-red-700 hover:bg-red-950">subscribe</button>
+                                class="text-slate-200 bg-red-500 px-2 py-1 rounded-xl ml-2 w-32 border border-red-700 hover:bg-red-950">subscribe</button>
                         </form>
                         <p
-                            class="text-slate-200 bg-red-800 px-2 py-1 rounded-xl flex justify-center my-3 border border-red-700 hover:bg-red-950">
+                            class="text-slate-200 bg-red-500 px-2 py-1 rounded-xl flex justify-center my-3 border border-red-700 hover:bg-red-950">
                             Contact</p>
                     </div>
                 </div>
@@ -162,6 +185,7 @@
         </footer>
     </div>
     @livewireScripts
+    @vite(['resources/css/app.css', 'resources/js/app.js', 'resources/css/style-carrousel.css'])
 </body>
 
 </html>

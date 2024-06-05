@@ -1,9 +1,9 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\http\Controllers\Controller;
-use App\http\Controllers\HomeController;
+use App\Http\Controllers\HomeController;
 
+// Middleware pour les routes nécessitant une authentification
 Route::middleware([
     'auth:sanctum',
     config('jetstream.auth_session'),
@@ -15,8 +15,7 @@ Route::middleware([
 
 });
 
-/////////////////////////////////////////////////////
-
+// Route de débogage
 Route::get('/debug', function () {
     return view('welcome');
 });
