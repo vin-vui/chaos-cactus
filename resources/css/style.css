@@ -1,0 +1,248 @@
+/* SLIDER-STYLES */
+
+.slider {
+    position: relative;
+    background-color: #55A0A7;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.slider .list .item {
+    position: absolute;
+    inset: 0;
+    overflow: hidden;
+}
+
+.slider .list .item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.slider .list .item::after {
+    content: '';
+    width: 100%;
+    height: 35%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background: linear-gradient(to top, #55A0A7, transparent);
+}
+
+.slider .list .item.active {
+    opacity: 1;
+    z-index: 10;
+}
+
+@keyframes showContent {
+    to {
+        transform: translateY(0);
+        filter: blur(0);
+        opacity: 1;
+    }
+}
+
+.arrows {
+    position: absolute;
+    width: 100%;
+    bottom: 7rem;
+    right: 50%;
+    transform: translateX(50%);
+    z-index: 100;
+}
+
+#prev {
+    position: absolute;
+    margin-left: 10%;
+    width: 2em;
+    height: 2em;
+    background-image: url(C:\Users\ACS\Documents\GitHub\chaos-cactus\public\images\Ressource_perso\screenshots\white-arrow.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    left: 0;
+    transform: scaleX(-1);
+}
+
+#next {
+    position: absolute;
+    margin-right: 10%;;
+    width: 2em;
+    height: 2em;
+    background-image: url(C:\Users\ACS\Documents\GitHub\chaos-cactus\public\images\Ressource_perso\screenshots\white-arrow.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    right: 0;
+    transition: .5s;
+}
+
+.arrows button {
+    background-color: #f1f1f185;
+    border: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    font-size: x-large;
+    color: #222;
+    transition: .5s;
+    display: flex;
+    padding-bottom: 1em;
+}
+
+#next:hover {
+    background-color: #e70e4fa9;
+    transition: .5s;
+}
+
+#prev:hover {
+    background-color: #e70e4fa9;
+    transition: .5s;
+}
+
+.thumbnail {
+    position: absolute;
+    bottom: -8%;
+    z-index: 11;
+    display: flex;
+    gap: 15px;
+    width: 100%;
+    height: 200px;
+    padding: 0 50px;
+    box-sizing: border-box;
+    overflow: auto;
+    justify-content: center;
+}
+
+.thumbnail::-webkit-scrollbar {
+    width: 0;
+}
+
+.thumbnail .item {
+    width: 8%;
+    height: 7rem;
+    filter: brightness(.4);
+    transition: .5s;
+    flex-shrink: 0;
+    transform: scale(.9);
+    border-radius: 2rem;
+}
+
+.thumbnail .item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 1rem;
+}
+
+.thumbnail .item.active {
+    filter: brightness(1.5);
+    transform: scale(1);
+    box-shadow: 0 5px 10px 4px #22222293;
+}
+
+@media screen and (max-width: 678px) {
+    .thumbnail {
+        justify-content: start;
+    }
+
+    .slider .list .item .content h2 {
+        font-size: 60px;
+    }
+
+    .arrows {
+        top: 10%;
+    }
+}
+
+/* NAVBAR ANIMATION STYLES */
+
+/* ********** RESET **********  */
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    overflow-x: hidden;
+}
+
+/* ********** NAVBAR **********  */
+
+.nav-toggler{
+    position: fixed;
+    z-index: 30;
+    top: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+}
+.line {
+    position: absolute;
+    display: block;
+    width: 70%;
+    height: 2px;
+    background: #F1F1F1;
+    transition: ease-out 0.2s;
+    opacity: ease-out 0.2s;
+}
+.L1{
+    transform: translateY(-10px);
+}
+.L3{
+    transform: translateY(10px);
+}
+.nav-toggler.active .L1{
+    transform: translateY(0px) rotate(-135deg);
+}
+.nav-toggler.active .L2{
+    opacity: 0;
+}
+.nav-toggler.active .L3{
+    transform: translateY(0px) rotate(135deg);
+}
+nav {
+    position: fixed;
+    display: flex;
+    width: 100%;
+    height: 15rem;
+    margin-top: 5rem;
+    background: #222;
+    z-index: 19;
+    right: 0;
+    justify-content: center;
+    align-items: center;
+    transform: translateX(100%);
+    transition: cubic-bezier(0.25, 0.46, 0.45, 0.94) 1s;
+}
+nav.active {
+    transform: translate(0);
+    transition: cubic-bezier(0.25, 0.46, 0.45, 0.94) 1s;
+    background-color: #222;
+}
+nav ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    overflow: hidden;
+    margin-top: .5rem;
+}
+nav li a{
+    cursor: pointer;
+    color: #F1F1F1;
+    width: 100%;
+    height: auto;
+    font-size: 2rem;
+    text-align: center;
+    justify-content: center;
+    text-decoration: none;
+    transition: ease 0.5s;
+}

@@ -1,9 +1,9 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\http\Controllers\Controller;
-use App\http\Controllers\HomeController;
+use App\Http\Controllers\HomeController;
 
+// Middleware pour les routes nécessitant une authentification
 Route::middleware([
     'auth:sanctum',
     config('jetstream.auth_session'),
@@ -14,17 +14,13 @@ Route::middleware([
     })->name('dashboard');
 });
 
-/////////////////////////////////////////////////////
-
+// Route de débogage
 Route::get('/debug', function () {
     return view('welcome');
 });
 
-
-Route::get('/',[HomeController::class,'index'])->name('home.index');
-
-Route::get('/Game',[HomeController::class,'game'])->name('game.index');
-
-Route::get('/Presse',[HomeController::class,'presse'])->name('presse.index');
-
-Route::get('/Contact',[HomeController::class,'contact'])->name('contact.index');
+// Routes principales
+Route::get('/', [HomeController::class, 'index'])->name('home.index');
+Route::get('/Game', [HomeController::class, 'game'])->name('game.index');
+Route::get('/Presse', [HomeController::class, 'presse'])->name('presse.index');
+Route::get('/Contact', [HomeController::class, 'contact'])->name('contact.index');
