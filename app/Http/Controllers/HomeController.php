@@ -79,4 +79,11 @@ class HomeController extends Controller
     }
 /*---------------------------------------------------------------------- */
 
+
+    public function admin2()
+    {
+        return view('vue.admin2', ['title' => 'admin2']);
+    }
+
+
 }

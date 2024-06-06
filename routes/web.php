@@ -20,8 +20,9 @@ Route::get('/debug', function () {
     return view('welcome');
 });
 
+Route::get('/', [HomeController::class, 'index'])->name('home.index');
 
-Route::get('/',[HomeController::class,'index'])->name('home.index');
+Route::get('/Game', [HomeController::class, 'game'])->name('game.index');
 
 Route::get('/game',[HomeController::class,'game'])->name('game.index');
 
@@ -40,3 +41,5 @@ Route::get('/adminmanager',[HomeController::class,'adminmanager'])->name('adminm
 Route::get('/admingamelist',[HomeController::class,'admingamelist'])->name('admingamelist.index');
 
 Route::post('/image-upload',[HomeController::class,'upload'])->name('HomeController.upload');
+
+Route::get('/admin2', [HomeController::class, 'admin2'])->name('admin2.index');
