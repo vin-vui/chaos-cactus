@@ -44,5 +44,7 @@
                 </x-button>
             </div>
         </form>
+
+        <h1>HI MAMI</h1>
     </x-authentication-card>
 </x-guest-layout>

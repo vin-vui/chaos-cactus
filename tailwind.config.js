@@ -36,6 +36,9 @@ export default {
                 '15': '-10deg',
                 '60': '60deg',
             },
+            colors: {
+                'custom-gray': '#333333',
+              },
         },
     },
     plugins: [forms, typography],

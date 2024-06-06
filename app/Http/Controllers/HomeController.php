@@ -22,4 +22,11 @@ class HomeController extends Controller
     {
         return view('vue.contact', ['title' => 'contact']);
     }
+
+    public function admin2()
+    {
+        return view('vue.admin2', ['title' => 'admin2']);
+    }
+
+
 }
