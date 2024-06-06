@@ -1,4 +1,5 @@
 
+
     <x-guest-layout>
         <main class=" overflow-x-hidden w-full flex flex-col justify-center items-center">
             <div id="hero"
