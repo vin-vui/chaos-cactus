@@ -2,9 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
-use App\Http\Controllers\HomeController;
 
-// Middleware pour les routes nécessitant une authentification
 // Middleware pour les routes nécessitant une authentification
 Route::middleware([
     'auth:sanctum',
@@ -17,7 +15,6 @@ Route::middleware([
 
 });
 
-// Route de débogage
 // Route de débogage
 Route::get('/debug', function () {
     return view('welcome');
