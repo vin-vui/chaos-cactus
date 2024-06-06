@@ -1,6 +1,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url(https://fonts.bunny.net/css?family=atma:300,400,500,600|darker-grotesque:300,400,500,600,700);
+
+/* FONTS */
+/* font-family: 'Atma', display;
+font-family: 'Darker Grotesque', sans-serif; */
 
 [x-cloak] {
     display: none;
@@ -8,10 +13,6 @@
 
 .blend-multiply {
     mix-blend-mode: multiply;
-}
-
-#navbar {
-    background-color: #222;
 }
 
 .li {
@@ -67,3 +68,34 @@
     background-color: rgb(239, 68, 68);
   }
   
+  /* MENU BURGER */
+  
+  .nav-toggler{
+    border: none;
+    outline: none;
+}
+.line {
+    position: absolute;
+    display: block;
+    justify-content: center;
+    width: 2rem;
+    height: 2px;
+    background: #F1F1F1;
+    transition: ease-out 0.2s;
+    opacity: ease-out 0.2s;
+}
+.L1{
+    transform: translateY(-10px);
+}
+.L3{
+    transform: translateY(10px);
+}
+.nav-toggler.active .L1{
+    transform: translateY(0px) rotate(-135deg);
+}
+.nav-toggler.active .L2{
+    opacity: 0;
+}
+.nav-toggler.active .L3{
+    transform: translateY(0px) rotate(135deg);
+}

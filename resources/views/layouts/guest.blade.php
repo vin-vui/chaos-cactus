@@ -11,22 +11,22 @@
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.bunny.net">
-    <link href="https://fonts.bunny.net/css?family=figtree:400,500,600&display=swap" rel="stylesheet" />
-
+    <link href="https://fonts.bunny.net/css?family=atma:300,400,500,600|darker-grotesque:300,400,500,600,700"
+        rel="stylesheet" />
     <!-- Styles -->
     @livewireStyles
     @vite(['resources/css/app.css', 'resources/js/app.js', 'resources/css/style-carrousel.css'])
 </head>
 
-<body>
+<body class="overflow-x-hidden">
     <header class="w-full bg-slate-900">
         <div>
             <ul class="flex justify-center py-2 gap-4 items-center bg-white ">
-                <li><a target="_blank" href="https://www.facebook.com/profile.php?id=61558752730532"><img
-                            alt="Logo FB" src="/images/Ressource_perso/logo/Facebook.png"></a>
+                <li><a target="_blank" href="https://www.facebook.com/profile.php?id=61558752730532"><img alt="Logo FB"
+                            src="/images/Ressource_perso/logo/Facebook.png"></a>
                 </li>
-                <li><a target="_blank" href="https://www.instagram.com/_chaos_cactus_/"><img
-                            alt="Logo Insta" src="/images/Ressource_perso/logo/Instagram.png"></a>
+                <li><a target="_blank" href="https://www.instagram.com/_chaos_cactus_/"><img alt="Logo Insta"
+                            src="/images/Ressource_perso/logo/Instagram.png"></a>
                 </li>
                 <li><a target="_blank" href="https://x.com/?lang=en"><img alt="Logo X"
                             src="/images/Ressource_perso/logo/Twitter.png"></a>
@@ -41,14 +41,14 @@
         </div>
     </header>
 
-    <nav class="sticky top-0 z-30">
-        <div class="relative flex justify-between items-center px-12 py-2" id="navbar">
+    <nav class=" sticky top-0 z-30 " x-data="{ open: false }">
+        <div class="relative flex justify-between items-center px-8 py-2 bg-neutral-900 " id="navbar">
             <div>
                 <img alt="Logo Chaos Cactus" src="/images/Ressource_perso/logo-studio/logo-chaos-cactus-pm.png">
             </div>
 
             <div>
-                <ul class=" flex gap-6 text-slate-200 uppercase items-center">
+                <ul class="hidden md:flex gap-6 text-slate-200 uppercase items-center">
                     <li>
                         <a id="page-home"
                             class="relative text-white text-1xl font-light border-none bg-transparent focus:outline-none"
@@ -102,17 +102,37 @@
                             </svg></a>
                     </li>
                     <li class="li">
-                        <button class="button">
+                        <div class="button">
                             <a a href="{{route('contact.index')}}" class="p">Contact</a>
-                        </button>
+                        </div>
                     </li>
+
+                </ul>
+                <button type="button" aria-label="toggle button" x-on:click="open = !open"
+                    class="nav-toggler absolute bg-transparent top-[1.5rem] right-[2rem] cursor-pointer items-center justify-center md:hidden block w-[2rem] h-[2rem] z-50"
+                    :class="open ? 'active' : ''">
+                    <span class="line L1"></span>
+                    <span class="line L2"></span>
+                    <span class="line L3"></span>
+                </button>
             </div>
         </div>
-    </nav>
+        <div x-show="open" x-cloak x-transition:enter="transition ease-out duration-300"
+            x-transition:enter-start="opacity-0 translate-x-full" x-transition:enter-end="opacity-100 translate-x-0"
+            x-transition:leave="transition ease-in duration-300" x-transition:leave-start="opacity-100 translate-x-0"
+            x-transition:leave-end="opacity-0 translate-x-full"
+            class=" w-[100%] right-[0] bg-red-500 h-[22rem] flex justify-center mt-[0rem] absolute z-50">
 
-    <!-- Styles -->
-    @livewireStyles
-    </head>
+            <ul class="flex flex-col w-4/5 items-center justify-center gap-5 text-white text-2xl">
+                <li><a class="font-darker-grotesque text-3xl" href="{{route('home.index')}}">Accueil</a></li>
+                <li><a class="font-darker-grotesque text-3xl" href="{{route('game.index')}}">Jeux</a></li>
+                <li><a class="font-darker-grotesque text-3xl" href="{{route('presse.index')}}">Presse</a></li>
+                <li><a class="font-darker-grotesque text-3xl" target="blank"
+                        href="https://store.steampowered.com/">Boutique</a></li>
+                <li><a class="font-darker-grotesque text-3xl" href="{{route('contact.index')}}">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
 
     <div class="font-sans text-gray-900 antialiased flex-grow">
         {{ $slot }}
@@ -122,6 +142,7 @@
         <footer class=" w-full h-auto bg-zinc-800 flex flex-col items-center">
 
             <div class="flex w-full justify-between">
+                <div class="flex ml-10 mt-3 h-[full] pb-10 w-96">
                 <div class="flex ml-10 mt-3 h-[full] pb-10 w-96">
                     <ul class="   text-slate-200 ">
                         <li class="flex mt-7"><svg width="24" height="24" fill="white"
@@ -163,7 +184,24 @@
                                 alt="Chaos Cactus Studio Logo" src="/images/Ressource_perso/logo/Git-white.png"></a>
                         <a target="_blank" href="https://dribbble.com/" class=" size-6 mx-4"><img
                                 alt="Chaos Cactus Studio Logo" src="/images/Ressource_perso/logo/Icon-white.png"></a>
+                        class="absolute mb-[20rem] w-[17rem] z-20">
+                    <img src="/images/Ressource_perso/logo-studio/typo_chaos.png" alt="Logo" class="w-40 mb-[-1rem]">
+                    <ul class=" flex absolute bottom-[5rem]">
+                        <a target="_blank" href="https://www.facebook.com/profile.php?id=61558752730532"
+                            class=" size-6 mx-4"><img alt="Chaos Cactus Studio Logo"
+                                src="/images/Ressource_perso/logo/Facebook-white.png"></a>
+                        <a target="_blank" href="https://www.instagram.com/_chaos_cactus_/" class=" size-6 mx-4"><img
+                                alt="Chaos Cactus Studio Logo"
+                                src="/images/Ressource_perso/logo/Instagram-white.png"></a>
+                        <a target="_blank" href="https://x.com/?lang=en" class=" size-6 mx-4"><img
+                                alt="Chaos Cactus Studio Logo" src="/images/Ressource_perso/logo/Twitter-white.png"></a>
+                        <a target="_blank" href="https://www.git-scm.com/" class=" size-6 mx-4"><img
+                                alt="Chaos Cactus Studio Logo" src="/images/Ressource_perso/logo/Git-white.png"></a>
+                        <a target="_blank" href="https://dribbble.com/" class=" size-6 mx-4"><img
+                                alt="Chaos Cactus Studio Logo" src="/images/Ressource_perso/logo/Icon-white.png"></a>
                     </ul>
+                    <p class=" absolute bottom-[3rem] text-slate-200 "> © 2024 Chaos Cactus, Inc. All rights reserved.
+                    </p>
                     <p class=" absolute bottom-[3rem] text-slate-200 "> © 2024 Chaos Cactus, Inc. All rights reserved.
                     </p>
                 </div>
@@ -174,8 +212,10 @@
                             <input type="email" placeholder="Enter your email" class="rounded-xl h-8 w-60">
                             <button type="submit" name="subscribe"
                                 class="text-slate-200 bg-red-500 px-2 py-1 rounded-xl ml-2 w-32 border border-red-700 hover:bg-red-950">subscribe</button>
+                                class="text-slate-200 bg-red-500 px-2 py-1 rounded-xl ml-2 w-32 border border-red-700 hover:bg-red-950">subscribe</button>
                         </form>
                         <p
+                            class="text-slate-200 bg-red-500 px-2 py-1 rounded-xl flex justify-center my-3 border border-red-700 hover:bg-red-950">
                             class="text-slate-200 bg-red-500 px-2 py-1 rounded-xl flex justify-center my-3 border border-red-700 hover:bg-red-950">
                             Contact</p>
                     </div>
@@ -184,6 +224,7 @@
         </footer>
     </div>
     @livewireScripts
+    @vite(['resources/css/app.css', 'resources/js/app.js', 'resources/css/style-carrousel.css'])
     @vite(['resources/css/app.css', 'resources/js/app.js', 'resources/css/style-carrousel.css'])
 </body>
 

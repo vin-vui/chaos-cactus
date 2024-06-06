@@ -1,6 +1,7 @@
 <x-guest-layout>
     <main>
         <div class="w-full h-[60vh] bg-press bg-no-repeat bg-cover bg-right  flex justify-center ">
+        <div class="w-full h-[60vh] bg-press bg-no-repeat bg-cover bg-right  flex justify-center ">
             <div class="text-white flex flex-col items-center ">
                 <p class="mb-8 mx-8 mt-14 text-5xl">THANK YOU FOR REACHING OUT TO US!</p>
                 <hr class="w-[100vh]">
@@ -34,7 +35,7 @@
             </div>
         </div>
 
-        <div class="w-full h-[70vh] bg-woodred bg-no-repeat bg-cover bg-right  flex justify-center items-center">
+        <div class="w-full h-[70vh] bg-[url('C:\Users\ACS\Documents\GitHub\chaos-cactus\public\images\Ressource_perso\woodred.png')] bg-no-repeat bg-cover bg-right  flex justify-center items-center">
          
         </div>
     </main>
