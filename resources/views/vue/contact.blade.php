@@ -4,8 +4,8 @@
 
 
         <div class="w-full h-96 bg-press bg-no-repeat bg-cover bg-right  flex justify-center items-center">
-            <div class="text-white flex flex-col items-center  gap-4 absolute top-[9rem]">
-                <p class="text-3xl">Get in touch</p>
+            <div class="text-white flex flex-col items-center  gap-4 absolute top-[9rem] ">
+                <p class="text-3xl mt-8">Get in touch</p>
                 <p class="w-96">You are always more than welcome to send us an email if you have any questions. 
                     We will do our best to respond as soon as possible.</p>
             </div>
@@ -25,7 +25,7 @@
             </div>
         </div>
 
-        <div class="w-full h-[70vh] bg-woodred bg-no-repeat bg-cover bg-right  flex justify-center items-center">
+        <div class="w-full h-[70vh] bg-[url('C:\Users\ACS\Documents\GitHub\chaos-cactus\public\images\Ressource_perso\woodred.png')] bg-no-repeat bg-cover bg-right  flex justify-center items-center">
 
         </div>
 
