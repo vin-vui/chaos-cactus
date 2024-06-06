@@ -20,6 +20,11 @@ class HomeController extends Controller
     {
         return view('vue.game', ['title' => 'game']);
     }
+    
+    public function golfslinger()
+    {
+        return view('vue.golfslinger', ['title' => 'golfslinger']);
+    }
 
     public function presse()
     {

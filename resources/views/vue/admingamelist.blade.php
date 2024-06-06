@@ -26,7 +26,7 @@
 
             <div>
                 <div class="bg-gray-200 flex items-center gap-11 w-4/5 mx-auto mt-6 px-2 py-1 rounded-md">
-                    <div class="h-8 w-8 rounded-full bg-red-800"></div>
+                    <div class="h-8 w-8 rounded-full bg-orange-600"></div>
                     <div class=" w-64"> Nom : <input type="text" value="GUNSLINGER" class=" h-6"></div>
                     <p class="bg-green-600 px-4 py-1 rounded-md text-white" href="">Edit</p>
 
@@ -37,7 +37,7 @@
                 </div>
 
                 <div class="bg-gray-200 flex items-center gap-11 w-4/5 mx-auto mt-6 px-2 py-1 rounded-md">
-                    <div class="h-8 w-8 rounded-full bg-red-800"></div>
+                    <div class="h-8 w-8 rounded-full bg-red-600"></div>
                     <div class=" w-64"> Nom : <input type="text" value="GUNSLINGER 2" class=" h-6"></div>
                     <p class="bg-green-600 px-4 py-1 rounded-md text-white" href="">Edit</p>
 
@@ -48,7 +48,7 @@
                 </div>
 
                 <div class="bg-gray-200 flex items-center gap-11 w-4/5 mx-auto mt-6 px-2 py-1 rounded-md">
-                    <div class="h-8 w-8 rounded-full bg-red-800"></div>
+                    <div class="h-8 w-8 rounded-full bg-red-600"></div>
                     <div class=" w-64"> Nom : <input type="text" value="GUNSLINGER 3" class=" h-6"></div>
                     <p class="bg-green-600 px-4 py-1 rounded-md text-white" href="">Edit</p>
 

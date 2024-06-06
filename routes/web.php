@@ -25,6 +25,8 @@ Route::get('/',[HomeController::class,'index'])->name('home.index');
 
 Route::get('/game',[HomeController::class,'game'])->name('game.index');
 
+Route::get('/game/golfslinger',[HomeController::class,'golfslinger'])->name('golfslinger.index');
+
 Route::get('/presse',[HomeController::class,'presse'])->name('presse.index');
 
 Route::get('/contact',[HomeController::class,'contact'])->name('contact.index');
