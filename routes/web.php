@@ -36,3 +36,5 @@ Route::get('/adminmainedit',[HomeController::class,'adminmainedit'])->name('admi
 Route::get('/adminmanager',[HomeController::class,'adminmanager'])->name('adminmanager.index');
 
 Route::get('/admingamelist',[HomeController::class,'admingamelist'])->name('admingamelist.index');
+
+Route::post('/image-upload',[HomeController::class,'upload'])->name('HomeController.upload');

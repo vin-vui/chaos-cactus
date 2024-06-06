@@ -93,11 +93,11 @@
                 data-aos="slide-right" data-aos-duration="1000">
                 <div class="mt-[2rem] ml-[20%] w-auto rounded-lg">
                     <div class="w-full my-4 border-[1rem] border-neutral-900 rounded-md">
-                        <iframe width="720" height="450"
+                        <!-- <iframe width="720" height="450"
                             src="https://www.youtube.com/embed/k4m_5JYrAGM?si=Y6tymGEi7aZRpyuk"
                             title="YouTube video player" frameborder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> -->
                     </div>
                 </div>
             </div>
