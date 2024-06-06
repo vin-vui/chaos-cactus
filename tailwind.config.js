@@ -13,6 +13,10 @@ export default {
 
     theme: {
         extend: {
+            fontFamily: {
+                'atma': ['Atma', 'sans-serif'],
+                'darker-grotesque': ['Darker Grotesque', 'sans-serif'],
+            },
             width: {
                 '700': '43.75rem',
                 '192': '60%',

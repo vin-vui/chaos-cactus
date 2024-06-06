@@ -1,4 +1,4 @@
-<x-guest-layout>
+<x-app-layout>
 
     <main class="flex ">
         <div class="bg-zinc-800 w-64 h-screen flex flex-col items-center text-center">
@@ -61,4 +61,4 @@
         </div>
     </main>
 
-</x-guest-layout>
+</x-app-layout>
