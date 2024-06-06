@@ -13,6 +13,10 @@ export default {
 
     theme: {
         extend: {
+            fontFamily: {
+                'atma': ['Atma', 'sans-serif'],
+                'darker-grotesque': ['Darker Grotesque', 'sans-serif'],
+            },
             width: {
                 '700': '43.75rem',
                 '192': '60%',
@@ -21,12 +25,7 @@ export default {
                 '100': '70rem',
             },
             backgroundImage: theme => ({
-                'hero': "url('C:/Users/ACS/Documents/GitHub/chaos-cactus/public/images/Ressource_perso/background-black-wall.png')",
                 'press': "url('C:/Users/ACS/Documents/GitHub/chaos-cactus/public/images/Ressource_perso/background-black-wall.jpg')",
-                'woodred': "url('C:/Users/ACS/Documents/GitHub/chaos-cactus/public/images/Ressource_perso/woodred.png')",
-                'game': "url('C:/Users/ACS/Documents/GitHub/chaos-cactus/public/images/Ressource_perso/Background-golfslinger.png')",
-                'game-text': "url('C:/Users/ACS/Documents/GitHub/chaos-cactus/public/images/Ressource_perso/white-texture-background.png')",
-                'cactus-banner': "url('C:/Users/ACS/Documents/GitHub/chaos-cactus/public/images/Ressource_perso/Chaos Cactus Bannière.png')",
                 'game-radial': 'radial-gradient(farthest-corner at 40px 40px, #3D4450 0%, #23262E 80%)',
             }),
             backgroundPosition: {
@@ -34,7 +33,7 @@ export default {
             },
             rotate: {
                 '15': '-10deg',
-                '60': '60deg',
+                '10': '10deg',
             },
         },
     },

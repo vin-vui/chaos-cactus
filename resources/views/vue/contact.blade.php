@@ -25,7 +25,7 @@
             </div>
         </div>
 
-        <div class="w-full h-[70vh] bg-woodred bg-no-repeat bg-cover bg-right  flex justify-center items-center">
+        <div class="w-full h-[70vh] bg-[url('C:\Users\ACS\Documents\GitHub\chaos-cactus\public\images\Ressource_perso\woodred.png')] bg-no-repeat bg-cover bg-right  flex justify-center items-center">
 
         </div>
 
