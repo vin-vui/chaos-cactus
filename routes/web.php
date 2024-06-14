@@ -1,5 +1,8 @@
 <?php
 
+
+use App\Http\Controllers\WelcomeController;
+use App\Http\Controllers\VideoController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
 
@@ -43,3 +46,20 @@ Route::get('/admingamelist',[HomeController::class,'admingamelist'])->name('admi
 Route::post('/image-upload',[HomeController::class,'upload'])->name('HomeController.upload');
 
 Route::get('/admin2', [HomeController::class, 'admin2'])->name('admin2.index');
+
+
+
+// ROUTES FOR VIDEO
+
+
+Route::resource('dashboard/videos', VideoController::class)
+->names([
+    'index' => 'dashboard.videos.index',
+    'create' => 'dashboard.videos.create',
+    'store' => 'dashboard.videos.store',
+    'show' => 'dashboard.videos.show',
+    'edit' => 'dashboard.videos.edit',
+    'update' => 'dashboard.videos.update',
+    'destroy' => 'dashboard.videos.destroy',
+]);
+Route::get('/home', [WelcomeController::class, 'index'])->name('home');

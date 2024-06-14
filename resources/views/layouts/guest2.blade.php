@@ -46,7 +46,6 @@
             <div>
                 <img alt="Logo Chaos Cactus" src="/images/Ressource_perso/logo-studio/logo-chaos-cactus-pm.png">
             </div>
-
             <div>
                 <ul class="hidden md:flex gap-6 text-slate-200 uppercase items-center">
                     <li>
@@ -106,7 +105,6 @@
                             <a a href="{{route('contact.index')}}" class="p">Contact</a>
                         </div>
                     </li>
-
                 </ul>
                 <button type="button" aria-label="toggle button" x-on:click="open = !open"
                     class="nav-toggler absolute bg-transparent top-[1.5rem] right-[2rem] cursor-pointer items-center justify-center md:hidden block w-[2rem] h-[2rem] z-50"
@@ -117,6 +115,7 @@
                 </button>
             </div>
         </div>
+        {{-- menu mobile --}}
         <div x-show="open" x-cloak x-transition:enter="transition ease-out duration-300"
             x-transition:enter-start="opacity-0 translate-x-full" x-transition:enter-end="opacity-100 translate-x-0"
             x-transition:leave="transition ease-in duration-300" x-transition:leave-start="opacity-100 translate-x-0"
@@ -131,80 +130,82 @@
                         href="https://store.steampowered.com/">Boutique</a></li>
                 <li><a class="font-darker-grotesque text-3xl" href="{{route('contact.index')}}">Contact</a></li>
             </ul>
+                <button type="button" aria-label="toggle button" x-on:click="open = !open"
+                    class="nav-toggler absolute bg-transparent top-[1.5rem] right-[2rem] cursor-pointer items-center justify-center md:hidden block w-[2rem] h-[2rem] z-50"
+                    :class="open ? 'active' : ''">
+                    <span class="line L1"></span>
+                    <span class="line L2"></span>
+                    <span class="line L3"></span>
+                </button>
+            </div>
         </div>
     </nav>
 
-    <div class="font-sans text-gray-900 antialiased flex-grow">
+    <main class="font-sans text-gray-900 antialiased flex-grow">
         {{ $slot }}
-    </div>
+    </main>
 
-    <div>
-        <footer class=" w-full h-auto bg-zinc-800 flex flex-col items-center">
+    <footer class=" w-full h-auto bg-zinc-800 flex flex-col items-center">
 
-            <div class="flex w-full justify-between">
-                <div class="flex ml-10 mt-3 h-[full] pb-10 w-96">
-                    <ul class="   text-slate-200 ">
-                        <li class="flex mt-7"><svg width="24" height="24" fill="white"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path d="M14 12a2 2 0 1 1-4 0 2 2 0 0 1 4 0z" />
-                            </svg>Acceuil</li>
-                        <li class="flex mt-7"><svg width="24" height="24" fill="white"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path d="M14 12a2 2 0 1 1-4 0 2 2 0 0 1 4 0z" />
-                            </svg>Jeux</li>
-                        <li class="flex mt-7"><svg width="24" height="24" fill="white"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path d="M14 12a2 2 0 1 1-4 0 2 2 0 0 1 4 0z" />
-                            </svg>Presse</li>
-                        <li class="flex mt-7"><svg width="24" height="24" fill="white"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path d="M14 12a2 2 0 1 1-4 0 2 2 0 0 1 4 0z" />
-                            </svg>Boutique</li>
-                        <li class="flex mt-7"><svg width="24" height="24" fill="white"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path d="M14 12a2 2 0 1 1-4 0 2 2 0 0 1 4 0z" />
-                            </svg>Contactez nous</li>
-                    </ul>
-                </div>
-                <div class=" relative flex flex-col justify-evenly items-center mt-2 w-96">
-                    <img src="/images/Ressource_perso/logo-studio/logo-chaos-cactus-simple.png" alt="logo_studio"
-                        class="absolute mb-[20rem] w-[17rem] z-20">
-                    <img src="/images/Ressource_perso/logo-studio/typo_chaos.png" alt="Logo" class="w-40 mb-[-1rem]">
-                    <ul class=" flex absolute bottom-[5rem]">
-                        <a target="_blank" href="https://www.facebook.com/profile.php?id=61558752730532"
-                            class=" size-6 mx-4"><img alt="Chaos Cactus Studio Logo"
-                                src="/images/Ressource_perso/logo/Facebook-white.png"></a>
-                        <a target="_blank" href="https://www.instagram.com/_chaos_cactus_/" class=" size-6 mx-4"><img
-                                alt="Chaos Cactus Studio Logo"
-                                src="/images/Ressource_perso/logo/Instagram-white.png"></a>
-                        <a target="_blank" href="https://x.com/?lang=en" class=" size-6 mx-4"><img
-                                alt="Chaos Cactus Studio Logo" src="/images/Ressource_perso/logo/Twitter-white.png"></a>
-                        <a target="_blank" href="https://www.git-scm.com/" class=" size-6 mx-4"><img
-                                alt="Chaos Cactus Studio Logo" src="/images/Ressource_perso/logo/Git-white.png"></a>
-                        <a target="_blank" href="https://dribbble.com/" class=" size-6 mx-4"><img
-                                alt="Chaos Cactus Studio Logo" src="/images/Ressource_perso/logo/Icon-white.png"></a>
-                    </ul>
-                    <p class=" absolute bottom-[3rem] text-slate-200 "> © 2024 Chaos Cactus, Inc. All rights reserved.
-                    </p>
-                </div>
-                <div class=" mt-10 w-96 mr-10">
-                    <p class=" text-slate-200 font-western">SUBSCRIBE TO OUR NEWSLETTER</p>
-                    <div>
-                        <form class="">
-                            <input type="email" placeholder="Enter your email" class="rounded-xl h-8 w-60">
-                            <button type="submit" name="subscribe"
-                                class="text-slate-200 bg-red-500 px-2 py-1 rounded-xl ml-2 w-32 border border-red-700 hover:bg-red-950">subscribe</button>
-                        </form>
-                        <p
-                            class="text-slate-200 bg-red-500 px-2 py-1 rounded-xl flex justify-center my-3 border border-red-700 hover:bg-red-950">
-                            Contact</p>
-                    </div>
+        <div class="flex w-full justify-between">
+            <div class="flex ml-10 mt-3 h-[full] pb-10 w-96">
+                <ul class="   text-slate-200 ">
+                    <li class="flex mt-7"><svg width="24" height="24" fill="white"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path d="M14 12a2 2 0 1 1-4 0 2 2 0 0 1 4 0z" />
+                        </svg><a href="{{route('home.index')}}">Accueil</a></li>
+                    <li class="flex mt-7"><svg width="24" height="24" fill="white"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path d="M14 12a2 2 0 1 1-4 0 2 2 0 0 1 4 0z" />
+                        </svg>Jeux</li>
+                    <li class="flex mt-7"><svg width="24" height="24" fill="white"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path d="M14 12a2 2 0 1 1-4 0 2 2 0 0 1 4 0z" />
+                        </svg><a href="https://store.steampowered.com/">Boutique</a></li>
+                    <li class="flex mt-7"><svg width="24" height="24" fill="white"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path d="M14 12a2 2 0 1 1-4 0 2 2 0 0 1 4 0z" />
+                        </svg><a href="{{route('contact.index')}}">Contactez nous</a></li>
+                </ul>
+            </div>
+            <div class=" relative flex flex-col justify-evenly items-center mt-2 w-96">
+                <img src="/images/Ressource_perso/logo-studio/logo-chaos-cactus-simple.png" alt="logo_studio"
+                    class="absolute mb-[20rem] w-[17rem] z-20">
+                <img src="/images/Ressource_perso/logo-studio/typo_chaos.png" alt="Logo" class="w-40 mb-[-1rem]">
+                <ul class=" flex absolute bottom-[5rem]">
+                    <a target="_blank" href="https://www.facebook.com/profile.php?id=61558752730532"
+                        class=" size-6 mx-4"><img alt="Chaos Cactus Studio Logo"
+                            src="/images/Ressource_perso/logo/Facebook-white.png"></a>
+                    <a target="_blank" href="https://www.instagram.com/_chaos_cactus_/" class=" size-6 mx-4"><img
+                            alt="Chaos Cactus Studio Logo"
+                            src="/images/Ressource_perso/logo/Instagram-white.png"></a>
+                    <a target="_blank" href="https://x.com/?lang=en" class=" size-6 mx-4"><img
+                            alt="Chaos Cactus Studio Logo" src="/images/Ressource_perso/logo/Twitter-white.png"></a>
+                    <a target="_blank" href="https://www.git-scm.com/" class=" size-6 mx-4"><img
+                            alt="Chaos Cactus Studio Logo" src="/images/Ressource_perso/logo/Git-white.png"></a>
+                    <a target="_blank" href="https://dribbble.com/" class=" size-6 mx-4"><img
+                            alt="Chaos Cactus Studio Logo" src="/images/Ressource_perso/logo/Icon-white.png"></a>
+                </ul>
+                <p class=" absolute bottom-[3rem] text-slate-200 "> © 2024 Chaos Cactus, Inc. All rights reserved.
+                </p>
+            </div>
+            <div class=" mt-10 w-96 mr-10">
+                <p class=" text-slate-200 font-western">SUBSCRIBE TO OUR NEWSLETTER</p>
+                <div>
+                    <form class="">
+                        <input type="email" placeholder="Enter your email" class="rounded-xl h-8 w-60">
+                        <button type="submit" name="subscribe"
+                            class="text-slate-200 bg-red-500 px-2 py-1 rounded-xl ml-2 w-32 border border-red-700 hover:bg-red-950">subscribe</button>
+                    </form>
+                    <p
+                        class="text-slate-200 bg-red-500 px-2 py-1 rounded-xl flex justify-center my-3 border border-red-700 hover:bg-red-950">
+                        Contact</p>
                 </div>
             </div>
-        </footer>
-    </div>
+        </div>
+    </footer>
+
     @livewireScripts
-    @vite(['resources/css/app.css', 'resources/js/app.js', 'resources/css/style-carrousel.css'])
 </body>
 
 </html>

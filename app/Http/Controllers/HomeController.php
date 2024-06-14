@@ -1,7 +1,7 @@
 <?php
 
 namespace App\Http\Controllers;
-
+use App\Models\Video;
 use Illuminate\Http\Request;
 use App\Models\Screen;
 
@@ -9,11 +9,14 @@ class HomeController extends Controller
 {
     public function index()
     {
-        // Récupère toutes les captures d'écran de la base de données
+        // Recupera tutte le catture dallo schermo dalla base di dati
         $screenshots = Screen::all();
 
-        // Passe les captures d'écran et le titre à la vue
-        return view('vue.home', ['screenshots' => $screenshots, 'title' => 'home']);
+        // Recupera il primo video dalla base di dati
+        $videos = Video::first();
+
+        // Passa le catture dallo schermo, i video e il titolo alla vista
+        return view('vue.home', ['screenshots' => $screenshots, 'videos' => $videos, 'title' => 'home']);
     }
 
     public function game()

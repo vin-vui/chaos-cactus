@@ -24,7 +24,7 @@
             </div>
         </div>
 
-        <div class="w-full bg-slate-500">
+        <div class="w-full bg-red-500">
             <div>
                 <form action="{{ route('HomeController.upload') }}" method="post" enctype="multipart/form-data" class="mt-8">
                     @csrf
@@ -37,6 +37,14 @@
                     </div>
                 </form>
             </div>
+
+
+
+            <a href="{{ route('dashboard.videos.index') }}" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Go To Video</a>
+
+
+
+            
         </div>
 
     </main>
